@@ -7,15 +7,13 @@ feeds:
 
 packages:
   - dnsmasq-full
-  - luci-app-openclash
-  - luci-theme-argon-2102
-  - luci-app-argon-config
+  - luci-app-passwall
   - luci-app-ttyd
   - ttyd
   - iptables-mod-fullconenat
+  - luci-app-ssr-plus
 
 diffconfig: |
   CONFIG_PACKAGE_dnsmasq=n
   CONFIG_LUCI_LANG_zh_Hans=y
-  CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
