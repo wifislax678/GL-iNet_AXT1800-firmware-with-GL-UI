@@ -21,7 +21,7 @@ sed -i '$d' package/base-files/files/bin/config_generate
 # sed -i "19a \ \ \ \ \ \ \ \ list   network          'wwan' " package/network/config/firewall/files/firewall.config
 
 # 设置风扇30度起转
-echo "uci set glfan.@globals[0].temperature='30'" >> package/base-files/files/bin/config_generate
+echo "uci set glfan.@globals[0].temperature='80'" >> package/base-files/files/bin/config_generate
 echo "uci set glfan.@globals[0].intergration='4'" >> package/base-files/files/bin/config_generate
 echo "uci set glfan.@globals[0].differential='20'" >> package/base-files/files/bin/config_generate
 echo "uci commit glfan" >> package/base-files/files/bin/config_generate
@@ -40,8 +40,8 @@ echo "uci commit glfan" >> package/base-files/files/bin/config_generate
 sed -i '$a uci commit' package/base-files/files/bin/config_generate
 
 # 设定主题luci-theme-argon
-sed -i 's/luci-theme-bootstrap/luci-theme-argon-2102/g' feeds/luci/collections/luci/Makefile
-sed -i 's/CONFIG_PACKAGE_luci-theme-bootstrap=y/# CONFIG_PACKAGE_luci-theme-bootstrap is not set/g' .config
+# sed -i 's/luci-theme-bootstrap/luci-theme-argon-2102/g' feeds/luci/collections/luci/Makefile
+# sed -i 's/CONFIG_PACKAGE_luci-theme-bootstrap=y/# CONFIG_PACKAGE_luci-theme-bootstrap is not set/g' .config
 
 # 设定root密码为password
 # sed -i '1d' package/base-files/files/etc/shadow
