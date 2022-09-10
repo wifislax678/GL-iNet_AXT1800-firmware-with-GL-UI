@@ -17,8 +17,8 @@
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-git clone https://github.com/vernesong/OpenClash.git $GITHUB_WORKSPACE/OpenClash
-cp -r $GITHUB_WORKSPACE/OpenClash/luci-app-openclash $GITHUB_WORKSPACE/gl-infra-builder/feeds/glinet/luci-app-openclash
+# git clone https://github.com/vernesong/OpenClash.git $GITHUB_WORKSPACE/OpenClash
+# cp -r $GITHUB_WORKSPACE/OpenClash/luci-app-openclash $GITHUB_WORKSPACE/gl-infra-builder/feeds/glinet/luci-app-openclash
 
 git clone https://github.com/NueXini/NueXini_Packages.git $GITHUB_WORKSPACE/gl-infra-builder/feeds/NueXini
 
