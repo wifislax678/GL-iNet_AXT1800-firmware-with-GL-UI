@@ -82,7 +82,7 @@ jobs:
     - name: fix helloword build error
       run: |      
        sudo  rm -rf feeds/packages/lang/golang
-       sudo  svn co https://github.com/openwrt/packages/branches/openwrt-22.03/lang/golang feeds/packages/lang/golang
+       svn co https://github.com/openwrt/packages/branches/openwrt-22.03/lang/golang feeds/packages/lang/golang
  
         
     - name: 添加glinet私有软件包（官方UI）
