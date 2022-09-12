@@ -10,7 +10,7 @@ packages:
   - luci-app-ttyd
   - ttyd
   - iptables-mod-fullconenat
-  - luci-app-ssr-plus
+#  - luci-app-ssr-plus
   - luci-app-openclash
 
 diffconfig: |
