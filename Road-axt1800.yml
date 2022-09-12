@@ -11,6 +11,7 @@ packages:
   - ttyd
   - iptables-mod-fullconenat
   - luci-app-ssr-plus
+  - luci-app-openclash
 
 diffconfig: |
   CONFIG_PACKAGE_dnsmasq=n
